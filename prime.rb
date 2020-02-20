@@ -1,6 +1,6 @@
 def prime?(number)
   (2..(number - 1)).each do |num|
-    return false if max{number, 0} % num == 0 
+    return false if [number, 0].max % num == 0 
     end
     true
   end
