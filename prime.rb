@@ -1,6 +1,12 @@
 def prime?(number)
-  (2..(number - 1)).each do |num|
-    return false if number % num == 0 
+  start = 2
+  if number > 1
+    range = (start..number-1).to_a
+    range.none? do |num|
+                                
+      number % num == 0
     end
-    true
+  else
+    false
   end
+end
