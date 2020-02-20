@@ -5,7 +5,7 @@ def prime?(number)
       false 
     else
       true 
-    end
+    end 
     i++
-  end
+   end 
 end
